@@ -1,0 +1,36 @@
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+#include <iostream>
+using namespace std;
+typedef long long ll;
+const int NN = 220000;
+
+int n, k, sum[NN], vis[NN], a[NN], c[NN], num, tmp;
+
+int main(){
+	freopen("d.in", "r", stdin);
+	//freopen("d.out", "w", stdout);
+	
+	scanf("%d%d", &n, &k);
+	for (int i=1; i<=n; i++) scanf("%d", &a[i]);
+	for (int i=1; i<=k; i++) scanf("%d", &c[i]);
+	
+	sort(a+1, a+n+1);
+	l = 1;
+	r = n;
+	while (l < r){
+		
+	}
+	
+	printf("%d\n", num);
+	tmp = 1;
+	for (int i=1; i<=num; i++){
+		printf("%d ", sum[i]);
+		for (int j=tmp; j<=tmp+sum[i]-1; j++) printf("%d ", a[j]);
+		printf("\n");
+		tmp += sum[i];
+	}
+	
+	return 0;
+} 
